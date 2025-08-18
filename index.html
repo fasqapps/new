@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inevitro is an app development company crafting high-quality mobile and web applications." />
+  <title>Inevitro — App Development Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Inevitro</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>We build apps that users love</h1>
+      <p>Inevitro is an app development company delivering robust, scalable mobile and web applications.
+         From idea to launch, we partner with you to ship fast and ship right.</p>
+      <div class="cta-group">
+        <a href="#contact" class="btn primary">Start a Project</a>
+        <a href="#services" class="btn ghost">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>What we do</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Mobile App Development</h3>
+          <p>Native and cross‑platform apps built with performance, accessibility, and delightful UX in mind.</p>
+        </article>
+        <article class="card">
+          <h3>Web App Development</h3>
+          <p>Modern, responsive web applications with robust backends and clean, maintainable code.</p>
+        </article>
+        <article class="card">
+          <h3>Product Strategy & UI/UX</h3>
+          <p>From discovery to wireframes and design systems, we help shape products that solve real problems.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section alt">
+    <div class="container two-col">
+      <div>
+        <h2>About Inevitro</h2>
+        <p>We are a team of engineers and designers focused on building reliable, scalable, and secure applications.
+           Our process emphasizes rapid iterations, transparent communication, and measurable results.</p>
+        <ul class="checks">
+          <li>Full‑cycle development</li>
+          <li>Agile delivery</li>
+          <li>Quality assurance & CI/CD</li>
+        </ul>
+      </div>
+      <div class="about-highlight">
+        <div class="stat"><span>50+ </span>projects shipped</div>
+        <div class="stat"><span>4.9/5 </span>client rating</div>
+        <div class="stat"><span>2019 </span>founded</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact us</h2>
+      <p>Tell us about your project. We usually respond within one business day.</p>
+      <form class="contact-form" action="https://formsubmit.co" method="POST">
+        <!-- Replace the action with your form handler or FormSubmit endpoint/email -->
+        <div class="grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <label>
+          <span>Project details</span>
+          <textarea name="message" placeholder="Briefly describe your idea, timeline, and budget." rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Inevitro. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
